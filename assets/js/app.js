@@ -6,16 +6,16 @@ let freezing =1;
 let max = 0;
 for (let i=0;i<winterDays.length-1;i++)
 {
-    console.log(`i: ${i}`);
+    /*console.log(`i: ${i}`);*/
     if ((winterDays[i]<0)&&(winterDays[i+1]<0))
     {
       freezing = freezing+1;  
      
-      console.log(`Период замерзаний: ${freezing} дня`);
+      /*console.log(`Период замерзаний: ${freezing} дня`);*/
     } 
     else if ((winterDays[i-1]>=0)&&(winterDays[i]<0)&&(winterDays[i+1]>=0))
     {freezing = 1;
-     console.log(`Период замерзаний: ${freezing} день`);}
+     /*console.log(`Период замерзаний: ${freezing} день`);*/}
     else 
     {
       freezing = 1;
